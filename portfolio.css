@@ -1,0 +1,131 @@
+/* General body and container styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Position at the top left corner */
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px); /* Adjust width to allow space for padding */
+}
+
+.name-corner a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px; /* Font size for the name */
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex; /* Make the menu a flex container */
+    gap: 15px; /* Set a gap between buttons */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Font size for buttons */
+    font-weight: 700;
+    padding: 10px 20px; /* Ensure consistent padding */
+    background-color: #2E8BC0;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: #2E8BC0; /* Change text color on hover */
+}
+
+/* Portfolio container with left and right panel */
+.portfolio-container {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Left Panel - Project Information */
+.left-panel {
+    background-color: #2E8BC0;
+    padding: 40px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.left-panel h1, .left-panel h2 {
+    color: white;
+}
+
+.project-details h3 {
+    color: #1C1C1C;
+}
+
+.view-project-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1C1C1C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-project-btn:hover {
+    background-color: white;
+    color: #2E8BC0;
+}
+
+/* Right Panel - Project Image */
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 20px;
+}
+
+/* Project Image Card */
+.project-image-card {
+    background-color: #2E8BC0;
+    padding: 20px;
+    border: 5px solid white;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E8BC0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

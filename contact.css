@@ -1,0 +1,141 @@
+    /* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+.name-corner a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a {
+    margin: 0 10px;  /* Reduced space between buttons */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #0078D7;
+    transition: background-color 0.3s;
+}
+
+.menu a.active {
+    background-color: #005bb5;
+}
+
+.menu a:hover {
+    background-color: #ffffff;
+    color: #0078D7;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1c1c1c;
+}
+
+@media(min-width: 768px) {
+    .contact-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.left-panel {
+    max-width: 40%;
+}
+
+.left-panel h1 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background: #2E8BC0;
+    border-radius: 10px;
+}
+
+.right-panel h2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.right-panel form input, 
+.right-panel form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.right-panel form input {
+    height: 40px;
+}
+
+.right-panel form textarea {
+    height: 100px;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #191919;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: white;
+    color: #2E8BC0;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0078D7;
+    color: #fff;
+    margin-top: 50px;
+    position: relative;
+}

@@ -1,0 +1,176 @@
+/* General body and container styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 50px;
+    padding: 20px; /* Add padding to prevent text from touching edges */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.name-corner a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex; /* Make the menu a flex container */
+    gap: 15px; /* Set a gap between buttons */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Font size for buttons */
+    font-weight: 700;
+    padding: 10px 20px; /* Ensure consistent padding */
+    background-color: #2E8BC0;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: #2E8BC0; /* Change text color on hover */
+}
+
+/* Left panel with profile picture and circular design */
+.left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-outer {
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.circle img {
+    border-radius: 50%;
+    width: 350px; /* Increased image size */
+    height: 350px;
+}
+
+/* Right panel with about me and skills */
+.right-panel {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: white;
+}
+
+.about-name {
+    font-size: 28px;
+    color: #2E8BC0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-title {
+    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-description {
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-me-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2E8BC0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-me-button:hover {
+    background-color: white;
+    color: #2E8BC0;
+}
+
+/* Skills section with icons */
+.skills-title {
+    margin-top: 40px;
+    font-size: 22px;
+    color: white;
+}
+
+.skills-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    position: relative;
+}
+
+.skills-icons i {
+    font-size: 40px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.skills-icons i:hover {
+    color: #2E8BC0;
+}
+
+/* Tooltip for skill icons */
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2E8BC0;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.skill:hover .tooltip {
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2E8BC0;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 16px;
+}
+
